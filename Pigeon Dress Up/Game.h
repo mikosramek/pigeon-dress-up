@@ -1,6 +1,6 @@
 #pragma once
 #include "Window.h"
-#include "MouseDebug.h"
+#include "MouseHelper.h"
 
 class Game
 {
@@ -17,9 +17,15 @@ public:
 
 private:
 	Window m_window;
-	MouseDebug m_mouseDebug;
+	MouseHelper m_mouseHelper;
 
 	sf::Clock m_clock;
 	sf::Time m_elapsed;
+
+	bool m_plhoIsHeld;
+	sf::Vector2i m_plhoOffset;
+	sf::RectangleShape m_plhoShape;
+	sf::Vector2i m_plhoPosition;
+	int m_plhoSize = 50;
 };
 

@@ -7,7 +7,7 @@
 
 int main()
 {
-    std::cout << "$projectname$ starting...\n";
+    std::cout << "Pigeon Dress Up starting...\n";
 
     Game game(2);
 
