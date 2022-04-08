@@ -1,5 +1,6 @@
 #pragma once
 #include "Window.h"
+#include "MouseDebug.h"
 
 class Game
 {
@@ -16,6 +17,7 @@ public:
 
 private:
 	Window m_window;
+	MouseDebug m_mouseDebug;
 
 	sf::Clock m_clock;
 	sf::Time m_elapsed;
