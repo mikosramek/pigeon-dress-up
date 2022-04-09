@@ -1,6 +1,9 @@
 #pragma once
 #include "Window.h"
 #include "MouseHelper.h"
+#include "MovableItem.h"
+
+using Wardrobe = std::vector<MovableItem>;
 
 class Game
 {
@@ -12,20 +15,15 @@ public:
 	void Update();
 	void Render();
 	Window* GetWindow();
-	sf::Time GetElapsed();
+	float GetElapsed();
 	void RestartClock();
-
 private:
 	Window m_window;
 	MouseHelper m_mouseHelper;
 
 	sf::Clock m_clock;
-	sf::Time m_elapsed;
+	float m_elapsed;
 
-	bool m_plhoIsHeld;
-	sf::Vector2i m_plhoOffset;
-	sf::RectangleShape m_plhoShape;
-	sf::Vector2i m_plhoPosition;
-	int m_plhoSize = 50;
+	Wardrobe m_wardrobe;
 };
 

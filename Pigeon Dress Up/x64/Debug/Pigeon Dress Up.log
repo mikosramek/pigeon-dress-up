@@ -1,16 +1,2 @@
-﻿  Game.cpp
-E:\SFML\Pigeon_Dress_Up\Pigeon Dress Up\Game.cpp(9,50): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\SFML\Pigeon_Dress_Up\Pigeon Dress Up\Game.cpp(9,38): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\SFML\Pigeon_Dress_Up\Pigeon Dress Up\Game.cpp(10,81): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-E:\SFML\Pigeon_Dress_Up\Pigeon Dress Up\Game.cpp(10,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-E:\SFML\Pigeon_Dress_Up\Pigeon Dress Up\Game.cpp(63,85): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-E:\SFML\Pigeon_Dress_Up\Pigeon Dress Up\Game.cpp(63,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+﻿  MouseHelper.cpp
   Pigeon Dress Up.vcxproj -> E:\SFML\Pigeon_Dress_Up\x64\Debug\Pigeon Dress Up.exe
