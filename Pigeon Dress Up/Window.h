@@ -12,7 +12,7 @@ public:
 	void BeginDraw(); // clear the window
 	void EndDraw(); // Display changes
 
-	void Update();
+	sf::Event& Update();
 
 	bool IsDone();
 	bool IsFullscreen();
