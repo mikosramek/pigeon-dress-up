@@ -1,5 +1,6 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include "ScreenShot.h"
 
 #pragma once
 class Window
@@ -32,5 +33,7 @@ private:
 	std::string m_windowTitle;
 	bool m_isDone;
 	bool m_isFullscreen;
+
+	ScreenShot m_screenshot;
 };
 

@@ -34,6 +34,12 @@ sf::Event& Window::Update() {
 		else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::F5) {
 			ToggleFullscreen();
 		}
+		if (event.type == sf::Event::KeyPressed) {
+			if (event.key.code == sf::Keyboard::Space) {
+				std::cout << "pressed space \n";
+				m_screenshot.SaveScreenShot(m_window);
+			}
+		}
 	}
 	return event;
 }
@@ -44,7 +50,7 @@ void Window::ToggleFullscreen() {
 	Create();
 }
 
-void Window::BeginDraw() { m_window.clear(sf::Color::Black); }
+void Window::BeginDraw() { m_window.clear(sf::Color::White); }
 void Window::EndDraw() { m_window.display(); }
 
 bool Window::IsDone() { return m_isDone; }

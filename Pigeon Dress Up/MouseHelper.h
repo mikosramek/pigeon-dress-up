@@ -13,6 +13,7 @@ public:
 	sf::Vector2i GetPosition();
 	bool GetIsPressed();
 	bool GetIsClicked();
+	bool GetIsDoubledClicked();
 	void HandleEvents(sf::Event& event);
 private:
 	sf::Vector2i m_mousePosition;
@@ -20,6 +21,9 @@ private:
 
 	bool m_isPressed;
 	bool m_isClicked;
+	bool m_isDoubleClicked;
+
+	int m_doubleClickBuffer;
 
 	int m_framesSinceClick;
 };

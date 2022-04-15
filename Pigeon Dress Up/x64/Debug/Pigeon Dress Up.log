@@ -1,2 +1,71 @@
-﻿  MouseHelper.cpp
+﻿  Game.cpp
+  MovableItem.cpp
+E:\SFML\Pigeon_Dress_Up\Pigeon Dress Up\MovableItem.cpp(33,75): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+E:\SFML\Pigeon_Dress_Up\Pigeon Dress Up\MovableItem.cpp(33,68): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+E:\SFML\Pigeon_Dress_Up\Pigeon Dress Up\MovableItem.cpp(33,64): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\SFML\Pigeon_Dress_Up\Pigeon Dress Up\MovableItem.cpp(33,49): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\SFML\Pigeon_Dress_Up\Pigeon Dress Up\MovableItem.cpp(49,26): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+E:\SFML\Pigeon_Dress_Up\Pigeon Dress Up\MovableItem.cpp(49,20): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+E:\SFML\Pigeon_Dress_Up\Pigeon Dress Up\MovableItem.cpp(72,9): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\SFML\Pigeon_Dress_Up\Pigeon Dress Up\MovableItem.cpp(71,3): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\SFML\Pigeon_Dress_Up\Pigeon Dress Up\MovableItem.cpp(70,14): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+E:\SFML\Pigeon_Dress_Up\Pigeon Dress Up\MovableItem.cpp(69,17): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+  main.cpp
+  Generating Code...
   Pigeon Dress Up.vcxproj -> E:\SFML\Pigeon_Dress_Up\x64\Debug\Pigeon Dress Up.exe

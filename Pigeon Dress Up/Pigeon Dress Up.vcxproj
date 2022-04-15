@@ -24,6 +24,7 @@
     <ProjectGuid>{3f10c246-752b-4c7b-bc77-5f7ca0285d4c}</ProjectGuid>
     <RootNamespace>Pigeon_Dress_Up</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Pigeon_Dress_Up</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -151,16 +152,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DataReader.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GlobalSettings.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MouseHelper.cpp" />
     <ClCompile Include="MovableItem.cpp" />
+    <ClCompile Include="ScreenShot.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DataReader.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="GlobalSettings.h" />
     <ClInclude Include="MouseHelper.h" />
     <ClInclude Include="MovableItem.h" />
+    <ClInclude Include="ScreenShot.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
