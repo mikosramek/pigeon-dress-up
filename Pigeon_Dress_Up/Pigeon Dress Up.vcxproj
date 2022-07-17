@@ -152,6 +152,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Background.cpp" />
     <ClCompile Include="DataReader.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GlobalSettings.cpp" />
@@ -162,6 +163,7 @@
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Background.h" />
     <ClInclude Include="DataReader.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GlobalSettings.h" />

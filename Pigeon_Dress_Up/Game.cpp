@@ -4,12 +4,13 @@ Game::Game(uint16_t xSize):
     m_window("Pigeon Dress Up", sf::Vector2u(800, 600)),
     m_mouseHelper(),
     m_dataReader("assets/data/wardrobe.csv"),
-    m_settings()
+    m_settings(),
+    m_background("assets/images/bgs.jpg", 5, 400, 0, 424)
 {
     m_elapsed = 0.0f;
     m_clock.restart();
 
-    if (!m_clothing.loadFromFile("assets/images/clothing.png")) {
+    if (!m_clothing.loadFromFile("assets/images/clothing_spritesheet.png")) {
         // error
     }
 
@@ -20,6 +21,8 @@ Game::Game(uint16_t xSize):
     float lineValues[5] = {0,0,0,0,0};
     int lineValueIndex = 0;
     size_t pos = 0;
+    int row = 0;
+    int col = 0;
     for (int index = 0; index < dataLines.size(); index += 1) {
         std::string line = dataLines[index];
         lineValueIndex = 0;
@@ -31,28 +34,34 @@ Game::Game(uint16_t xSize):
             line.erase(0, pos + delimiter.length());
         }
         lineValues[lineValueIndex++] = std::stof(line);
+
+        row = index % 4;
+        col = index / 4;
+        int x = 100 + 75 * col;
+        int y = 100 + 125 * row;
+
         
         m_wardrobe.push_back(
             MovableItem(
-                sf::Vector2i(100, 100 + 100 * index),
-                lineValues[0],
-                lineValues[1],
-                lineValues[2],
-                lineValues[3],
-                lineValues[4],
+                sf::Vector2i(x, y),
+                lineValues[0], // texture x
+                lineValues[1], // texture y
+                lineValues[2], // width
+                lineValues[3], // height
+                lineValues[4], // scale
                 &m_clothing,
                 m_settings.GetIsDebug()
             )
         );
     }
 
-    if (!m_mashaTexture.loadFromFile("assets/images/masha.jpg")) {
+    if (!m_mashaTexture.loadFromFile("assets/images/masha.png")) {
         // error
     }
     m_mashaTexture.setSmooth(true);
     m_masha.setTexture(m_mashaTexture);
     m_masha.setScale(0.25f, 0.25f);
-    m_masha.setPosition(325, 50);
+    m_masha.setPosition(400, 50);
 }
 
 Game::~Game() {}
@@ -62,6 +71,7 @@ void Game::HandleInput() {}
 void Game::Update() {
 	sf::Event event = m_window.Update();
     m_mouseHelper.HandleEvents(event);
+    m_background.HandleEvents(event);
 
     float timestep = 0.01f;
 
@@ -85,6 +95,7 @@ void Game::RestartClock() { m_elapsed += m_clock.restart().asSeconds(); }
 void Game::Render() {
     m_window.BeginDraw();
 
+    m_background.Render(*m_window.GetRenderWindow());
     m_window.Draw(m_masha);
 
     if (m_settings.GetIsDebug()) {
