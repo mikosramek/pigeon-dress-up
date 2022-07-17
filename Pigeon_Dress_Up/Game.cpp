@@ -62,6 +62,9 @@ Game::Game(uint16_t xSize):
     m_masha.setTexture(m_mashaTexture);
     m_masha.setScale(0.25f, 0.25f);
     m_masha.setPosition(400, 50);
+
+    if (!m_foregroundTexture.loadFromFile("assets/images/window.png")) { /* error */ }
+    m_foreground.setTexture(m_foregroundTexture);
 }
 
 Game::~Game() {}
@@ -96,6 +99,7 @@ void Game::Render() {
     m_window.BeginDraw();
 
     m_background.Render(*m_window.GetRenderWindow());
+    m_window.Draw(m_foreground);
     m_window.Draw(m_masha);
 
     if (m_settings.GetIsDebug()) {

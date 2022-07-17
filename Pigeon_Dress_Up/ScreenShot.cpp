@@ -14,8 +14,8 @@ void ScreenShot::SaveScreenShot(sf::RenderWindow& l_window) {
 
 	sf::Image image1 = texture.copyToImage();
 	sf::Image image2;
-	image2.create(400, 600);
-	image2.copy(image1, 0, 0, sf::IntRect(400, 0, 400, 600));
+	image2.create(415, 600);
+	image2.copy(image1, 0, 0, sf::IntRect(385, 0, 415, 600));
 	
 	std::string timestamp = time_stamp("MASHA_%Y%m%d%H%M%S") + ".jpg";
 

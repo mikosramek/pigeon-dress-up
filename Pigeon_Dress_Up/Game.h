@@ -33,8 +33,8 @@ private:
 	sf::Sprite m_masha;
 	sf::Texture m_mashaTexture;
 	sf::Texture m_clothing;
-	//sf::Texture m_backgroundTexture;
-	//sf::Sprite m_background;
+	sf::Texture m_foregroundTexture;
+	sf::Sprite m_foreground;
 
 	GlobalSettings m_settings;
 	Background m_background;

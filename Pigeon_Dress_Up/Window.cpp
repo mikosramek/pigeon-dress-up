@@ -35,7 +35,7 @@ sf::Event& Window::Update() {
 			ToggleFullscreen();
 		} else if (event.type == sf::Event::KeyPressed) {
 			if (event.key.code == sf::Keyboard::Space) {
-				std::cout << "pressed space \n";
+				// std::cout << "pressed space \n";
 				m_screenshot.SaveScreenShot(m_window);
 			}
 		}

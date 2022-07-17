@@ -172,6 +172,25 @@
     <ClInclude Include="ScreenShot.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\data\wardrobe.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="assets\fonts\comic.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\images\bgs.jpg" />
+    <Image Include="assets\images\clothing.png" />
+    <Image Include="assets\images\clothing_spritesheet.png" />
+    <Image Include="assets\images\masha.jpg" />
+    <Image Include="assets\images\masha.png" />
+    <Image Include="assets\images\window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\**\*.*">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

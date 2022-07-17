@@ -1,0 +1,6 @@
+E:\SFML\Pigeon_Dress_Up\x64\Release\assets\data\wardrobe.csv
+E:\SFML\Pigeon_Dress_Up\x64\Release\assets\fonts\comic.ttf
+E:\SFML\Pigeon_Dress_Up\x64\Release\assets\images\bgs.jpg
+E:\SFML\Pigeon_Dress_Up\x64\Release\assets\images\clothing_spritesheet.png
+E:\SFML\Pigeon_Dress_Up\x64\Release\assets\images\masha.png
+E:\SFML\Pigeon_Dress_Up\x64\Release\assets\images\window.png
